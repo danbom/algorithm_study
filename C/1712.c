@@ -6,7 +6,7 @@ int main(){
     scanf("%d %d %d", &A, &B, &C);
     if (B >= C)
     {
-        print("-1");
+        printf("-1");
         return 0;
     }
     sold = A/(C-B)+1;
