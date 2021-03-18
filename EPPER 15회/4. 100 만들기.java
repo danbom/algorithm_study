@@ -23,11 +23,28 @@ import java.util.Scanner;
 	 for ( int i = 0 ; i < b ; i++ )
 		 answer[i] = numbers[i];
 	 
-	 if ( b+1 == a ){
+	 if ( a+1 == 8 )
+		 answer[6] = numbers[8];
+	 
+	 else if ( b+1 == a ){
 		 for ( int i = a+1 ; i < 8 ; i++ ){
 			 answer[i-2] = numbers[i];
 		 }
+		 if ( answer[6] == 0 )
+			 answer[6] = numbers[8];
 	 }
+	 
+	 
+	 else {
+		 int bb = b;
+		 for ( int i = b+1; i < a-1 ; i++ ){
+			 answer[bb] = numbers[i];
+			 bb++;
+		 }
+		 if ( a == 8 )
+			 answer[6] = numbers[7];
+	 }
+		 
  
 	 return answer;
  }
