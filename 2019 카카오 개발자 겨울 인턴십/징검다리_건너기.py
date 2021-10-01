@@ -28,6 +28,8 @@ def binary_search(stones, k, niniz):
 def solution(stones, k):
     
     # 이 코드 없으면 첫번째 테스트케이스 오류
+    # 테스트케이스 1번 : Input이 [2], 1인 경우
+    # 기댓값 : 2, 실행값 : 1이 나오게된다
     # k=1인 경우 예외처리
     if (k==1):
         return min(stones)
