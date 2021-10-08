@@ -39,5 +39,6 @@
  - 1259_팰린드롬수 : https://www.acmicpc.net/problem/1259</br>
  - 13458_시험감독 : https://www.acmicpc.net/problem/13458</br>
  - 1712_손익분기점 : https://www.acmicpc.net/problem/1712</br>
+ - 14891_톱니바퀴 : https://www.acmicpc.net/problem/14891</br>
 
 </br>
