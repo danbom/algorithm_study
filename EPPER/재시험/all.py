@@ -59,3 +59,17 @@ for i in range(1, len(user_input)):
         answer += chr(ord("A") + continuity)
 
 print(answer)
+
+# 2*N 타일링
+user_input = int(input("입력 : "))
+
+dp = [0] * (user_input+1)
+dp[1] = 1
+dp[2] = 5
+dp[3] = 11
+
+if user_input >= 4:
+    for i in range(4, user_input+1):
+        dp[i] = dp[i-1] + 4*dp[i-2] + 2*dp[i-3]
+
+print(dp[user_input]%1007)
